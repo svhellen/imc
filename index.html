@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <p>Coloque os seus dados na calculadora e calcule o seu IMC:</p>
+        <div id="calculo">
+            <h2>Sexo</h2>
+            <div id="btn-gender">
+                
+                <input type="button" value="Mulher" id="btn-gender-f"><input type="button" value="Homem" id="btn-gender-m">
+            </div>
+            <h2>Idade</h2>
+            <input type="number" placeholder="Ex: 35"> anos
+            <h2>Altura</h2>
+            <input type="number" placeholder="Ex: 165"> cm
+            <h2>Peso</h2>
+            <input type="number" placeholder="Ex: 62,5"> kg <br>
+            <button onclick="calcular()">CALCULAR</button>
+        </div>
+        <div id="resultado">
+            <h2>Resultado</h2>
+            <p>Seu IMC é de <span id="res"></span> 16.8 kg/m2</p>
+            <p>De acordo com a Organização Mundial da Saúde, seu IMC está abaixo do recomendado para a sua altura. Para atingir um valor de IMC normal, seu peso deve estar entre <span id="peso-ideal">47.4 e 63.7 kg</span>.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>IMC</th>
+                        <th>PESO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Magreza</td>
+                        <td id="imc-magreza">&lt; 18.5</td>
+                        <td id="peso-magreza"></td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td id="imc-normal">18.5 a 24.9</td>
+                        <td id="peso-normal"></td>
+                    </tr>
+                    <tr>
+                        <td>Sobrepeso</td>
+                        <td id="imc-sobrepeso">24.9 a 30</td>
+                        <td id="peso-sobrepeso"></td>
+                    </tr>
+                    <tr>
+                        <td>Obesidade</td>
+                        <td id="imc-obesidade">&gt; 30</td>
+                        <td id="peso-obesidade"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

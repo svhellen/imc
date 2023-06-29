@@ -1,0 +1,109 @@
+@charset "UTF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-color: lightblue;
+    --text-color: white;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    background-color: white;
+}
+
+body h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0px 5px 0px;
+}
+
+main {
+    max-width: 800px;
+    padding: 30px;
+    margin: 0px auto;
+}
+
+div {
+    padding: 10px 30px;
+}
+
+#calculo {
+    border: 1px solid var(--bg-color);
+    box-shadow: 10px 10px 10px var(--bg-color);
+    border-radius: 5px;
+    margin: 50px 0;
+}
+
+#calculo input {
+    height: 40px;
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
+}
+
+#btn-gender {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+#btn-gender-f {
+    background: rgb(255, 192, 203);
+    color: white;
+    width: 200px;
+    border: 1px solid rgb(255, 192, 203);
+}
+
+#btn-gender-m {
+    background: rgb(93, 180, 252);
+    color: var(--text-color);
+    width: 200px;
+}
+
+#resultado {
+    background: rgb(238, 238, 238);
+}
+
+button {
+    background: rgb(31, 91, 255);
+    color: var(--text-color);
+    height: 40px;
+    width: 500px;
+    border: 1px solid rgb(31, 91, 255);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+table {
+    background: white;
+    width: 500px;
+    border-radius: 5px;
+    margin: 24px 0;
+}
+
+thead {
+    background: var(--bg-color);
+    text-align: left;
+}
+
+tbody {
+    
+}
+
+tr {
+    height: 40px;
+}
+
+td {
+    padding: 12px 18px;
+}
